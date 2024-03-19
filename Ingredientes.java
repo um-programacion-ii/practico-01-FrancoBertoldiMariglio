@@ -2,6 +2,7 @@ public class Ingredientes {
     private String nombre;
     private int cantidad;
 
+    public Ingredientes() { }
     public Ingredientes(String nombre, int cantidad) {
         this.nombre = nombre;
         this.cantidad = cantidad;
