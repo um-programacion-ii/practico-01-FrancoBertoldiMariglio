@@ -35,4 +35,13 @@ public class Receta {
     public void setPreparacion(String preparacion) {
         this.preparacion = preparacion;
     }
+
+    public String toString() {
+        String ingredientes = "";
+        for (Ingrediente ingrediente : this.ingredientes) {
+            ingredientes += ingrediente + "\n";
+        }
+        return "Receta: " + this.getClass().getSimpleName() + "\nTiempo de coccion: " + this.tiempoCoccion +
+                "seg" + "\nIngredientes:\n" + ingredientes + "Preparacion: " + this.preparacion;
+    }
 }

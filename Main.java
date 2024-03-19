@@ -1,5 +1,4 @@
-import entidades.Ingrediente;
-import entidades.Despensa;
+import entidades.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +19,13 @@ public class Main {
         System.out.println(ingrediente1);
         despensa.getIngrediente("Azucar", 300);
         System.out.println(ingrediente2);
+
+        FideosConCrema fideosConCrema = new FideosConCrema();
+        Milanesa milanesa = new Milanesa();
+        PastelDePapa pastelDePapa = new PastelDePapa();
+
+        System.out.println(fideosConCrema.toString());
+        System.out.println(milanesa.toString());
+        System.out.println(pastelDePapa.toString());
     }
 }
