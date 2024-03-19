@@ -27,7 +27,8 @@ public class Ingrediente {
 
     public void sacar(int cantidad) {
         if (this.cantidad < cantidad) {
-            System.out.println("No hay suficiente cantidad de " + nombre);
+            System.out.println("No hay suficiente cantidad de " + nombre + " me falta " +
+                    (cantidad - this.cantidad) + "");
             return;
         }
         this.cantidad -= cantidad;
