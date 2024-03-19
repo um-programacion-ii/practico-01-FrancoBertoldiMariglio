@@ -32,12 +32,13 @@ public class Ingrediente {
         return "Nombre: " + nombre + " Cantidad: " + cantidad;
     }
 
-    public void sacar(int cantidad) {
+    public boolean sacar(int cantidad) {
         if (this.cantidad < cantidad) {
             System.out.println("No hay suficiente cantidad de " + nombre + " me falta " +
                     (cantidad - this.cantidad) + "");
-            return;
+            return false;
         }
         this.cantidad -= cantidad;
+        return true;
     }
 }

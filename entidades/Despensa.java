@@ -3,7 +3,7 @@ package entidades;
 import entidades.Ingrediente;
 
 public class Despensa {
-    private Ingrediente[] ingredientes = new Ingrediente[10];
+    private Ingrediente[] ingredientes = new Ingrediente[20];
     private int count = 0;
 
     public void addIngrediente(Ingrediente ingrediente) {
@@ -25,5 +25,9 @@ public class Despensa {
             i++;
         }
         System.out.println("No se encontro el ingrediente " + ingrediente);
+    }
+
+    public Ingrediente[] getIngredientes() {
+        return ingredientes;
     }
 }
