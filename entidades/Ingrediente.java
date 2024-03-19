@@ -1,4 +1,6 @@
-public class Ingredientes {
+package entidades;
+
+public class Ingrediente {
     private String nombre;
     private int cantidad;
 
@@ -21,5 +23,13 @@ public class Ingredientes {
     @Override
     public String toString() {
         return "Nombre: " + nombre + " Cantidad: " + cantidad;
+    }
+
+    public void sacar(int cantidad) {
+        if (this.cantidad < cantidad) {
+            System.out.println("No hay suficiente cantidad de " + nombre);
+            return;
+        }
+        this.cantidad -= cantidad;
     }
 }
