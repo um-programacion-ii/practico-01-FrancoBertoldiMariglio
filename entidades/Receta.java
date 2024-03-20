@@ -6,6 +6,8 @@ public class Receta {
 
     protected String preparacion;
 
+    public Receta() { }
+
     public Receta(int tiempoCoccion, Ingrediente[] ingredientes, String preparacion) {
         this.tiempoCoccion = tiempoCoccion;
         this.ingredientes = ingredientes;
