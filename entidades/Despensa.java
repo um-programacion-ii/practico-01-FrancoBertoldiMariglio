@@ -11,7 +11,7 @@ public class Despensa {
             ingredientes[count] = ingrediente;
             count++;
         } else {
-            System.out.println("Despensa is full. Cannot add more ingredientes.");
+            System.out.println("La Despensa esta llena, no se pueden agregar nuevos ingredientes.");
         }
     }
 

@@ -44,7 +44,7 @@ public class Main {
 
         Ingrediente ingrediente11 = new Ingrediente();
         ingrediente11.setNombre("Aceite");
-        ingrediente11.setCantidad(80);
+        ingrediente11.setCantidad(100);
 
         Despensa despensa = new Despensa();
         despensa.addIngrediente(ingrediente1);
@@ -63,7 +63,8 @@ public class Main {
         Milanesa milanesa = new Milanesa();
 
         Chef chef = new Chef("Gordon Ramsay", 3);
-        chef.cocinar(despensa, fideosConCrema);
-        chef.cocinar(despensa, milanesa);
+        System.out.println(chef);
+        chef.cocinaService.cocinar(despensa, fideosConCrema);
+        chef.cocinaService.cocinar(despensa, milanesa);
     }
 }
